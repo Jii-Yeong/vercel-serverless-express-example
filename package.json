@@ -4,6 +4,7 @@
   "repository": "git@github.com:Jii-Yeong/vercel-serverless-express-example.git",
   "author": "Jii-Yeong <tj5134@naver.com>",
   "license": "MIT",
+  "main": "index.js",
   "scripts": {
     "dev": "vercel dev"
   },
