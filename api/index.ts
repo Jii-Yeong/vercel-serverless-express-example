@@ -10,6 +10,6 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-app.use("hello", helloRouter);
+app.use("/hello", helloRouter);
 
 export default app;
