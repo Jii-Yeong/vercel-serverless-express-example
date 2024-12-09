@@ -1,9 +1,15 @@
-import express, { Request, Response } from "express";
+import express from "express";
+import helloRouter from "./hello";
+import cors from "cors";
 
 const app = express();
 
-app.get("/hello", (req: Request, res: Response) => {
-  res.send("hello express");
-});
+const corsOptions = {
+  origin: process.env.CLIENT_URL,
+};
+
+app.use(cors(corsOptions));
+
+app.use("hello", helloRouter);
 
 export default app;
