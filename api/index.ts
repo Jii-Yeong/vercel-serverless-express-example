@@ -1,5 +1,5 @@
 import express from "express";
-import helloRouter from "./hello.ts";
+import helloRouter from "./hello.js";
 import cors from "cors";
 
 const app = express();
